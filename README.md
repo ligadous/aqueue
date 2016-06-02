@@ -1,6 +1,6 @@
 # AQUEUE - Append Only Queue
 
-This code was built with the purpose of creating a simple queue system without any kind of data update and that could be manipulated by commandline tools like cat, grep, sed and vi.
+This code was built with the purpose of creating a persistent queue system without any kind of data update and that could be manipulated by commandline tools like cat, grep, sed and vi.
 
 We never update or delete any byte.
 
@@ -94,3 +94,11 @@ func main() {
 }
 `
 
+##TODO
+
+* Stats information 
+* LRU cache implementation
+* commandline tools to manipulate queues files
+	- remove lines
+	- update lines
+	- check CRC without pop and push
